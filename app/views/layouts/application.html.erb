@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perkbox Prototype</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Perkbox Prototype">
+    <meta name="Bill Hewitt" content="Perkbox Prototype">
+    <!-- Favicon -->
+    <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  </head>
+
+
+
+  <body>
+
+    <% if current_page?(pages_welcome_path) or current_page?(pages_login_path) or current_page?(pages_configure_path) or current_page?(pages_motivators_path) -%>
+        <%= render 'layouts/header1' %>
+
+    <% end %>
+
+    <% if current_page?(pages_welcomeman_path) or current_page?(pages_creditteam_path) or current_page?(pages_team_path) or current_page?(pages_team2_path) or current_page?(pages_creditman_path) or current_page?(pages_companyperksman_path) or current_page?(pages_performanceperksman_path) or current_page?(pages_financialman_path) or current_page?(pages_giftman_path) or current_page?(pages_marketman_path) or current_page?(pages_feedman_path) or current_page?(pages_welcomeman2_path) -%>
+        <%= render 'layouts/headerman' %>
+
+    <% end %>
+
+    <% if current_page?(pages_physical_path) or current_page?(pages_welcome6_path) or current_page?(pages_welcome5_path) or current_page?(pages_welcome4_path) or current_page?(pages_watched_path) or current_page?(pages_welcome3_path) or current_page?(pages_credit_path) or current_page?(pages_companyperks_path) or current_page?(pages_performanceperks_path) or current_page?(pages_financial_path) or current_page?(pages_gift_path) or current_page?(pages_market_path) or current_page?(pages_feed_path) or current_page?(pages_feed1_path) or current_page?(pages_welcome2_path) or current_page?(pages_profile_path) or current_page?(pages_trophies_path) or current_page?(pages_history_path) -%>
+        <%= render 'layouts/header' %>
+    <% end %>
+
+    <%= yield %>
+
+    <% if current_page?(root_path) or current_page?(pages_login_path) or current_page?(pages_configure_path) or current_page?(pages_motivators_path) -%>
+
+    <% else %>
+
+        <%= render 'layouts/footer' %>
+     <% end %>
+
+
+
+    <script>
+      (function() {
+        $(document).on('click', function (e){
+          var collapse1_opened = $('#collapseExample1').hasClass('show');
+        
+          if(!$(e.target).closest('#collapseExample1').length &&
+              !$(e.target).is('#collapseExample1') &&
+              collapse1_opened === true){
+                  $('#collapseExample1').collapse('toggle');
+          }
+
+          var collapse2_opened = $('#collapseExample2').hasClass('show');
+        
+          if(!$(e.target).closest('#collapseExample2').length &&
+              !$(e.target).is('#collapseExample2') &&
+              collapse2_opened === true){
+                  $('#collapseExample2').collapse('toggle');
+          }
+
+          var collapse3_opened = $('#collapseExample3').hasClass('show');
+        
+          if(!$(e.target).closest('#collapseExample3').length &&
+              !$(e.target).is('#collapseExample3') &&
+              collapse3_opened === true){
+                  $('#collapseExample3').collapse('toggle');
+          }
+
+        });
+      })();
+    </script> 
+
+  </body>
+</html>
+

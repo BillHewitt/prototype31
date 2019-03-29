@@ -1,0 +1,171 @@
+<header class="header-global">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+      <div class="container-fluid">
+        <%= link_to image_tag("perkbox.png"), pages_welcomeman2_path, :class=>'navbar-brand mr-lg-5' %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="../index.html">
+                  <img src="../assets/img/brand/dark.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="ni ni-ui-04 d-lg-none"></i>
+                <span class="nav-link-inner--text">Perks</span>
+              </a>
+              
+              <div class="dropdown-menu dropdown-menu-xl">
+                <div class="dropdown-menu-inner">
+                  <%= link_to pages_companyperksman_path, class: "media d-flex align-items-center" do %>
+                    <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-primary mb-md-1">Team & Company Perks</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Use your credit to redeem the perks you value most.</p>
+                    </div>
+                  <% end %>
+                  <%= link_to pages_performanceperksman_path, class: "media d-flex align-items-center" do %>
+                    <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                      <i class="fa fa-trophy" aria-hidden="true"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-warning mb-md-1">Performance-Based Perks</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Unlock individual and team perks with outstanding performance.</p>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                <i class="ni ni-ui-04 d-lg-none"></i>
+                <span class="nav-link-inner--text">Discover</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl">
+                <div class="dropdown-menu-inner">
+                  <%= link_to pages_financialman_path, class: "media d-flex align-items-center" do %>
+                    <div class="icon icon-shape icon-shape-danger rounded-circle mb-4">
+                      <i class="fa fa-credit-card"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-danger mb-md-1">Financial Discounts</h6>
+                      <p class="description d-none d-md-inline-block mb-0">100s of discounts at local restaurants, retailers and online shops.</p>
+                    </div>
+                  <% end %>
+                  <%= link_to pages_marketman_path, class: "media d-flex align-items-center" do %>
+                    <div class="icon icon-shape icon-shape-default rounded-circle mb-4">
+                      <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-default mb-md-1">Our Marketplace</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Carefully curated, online subscriptions to help you learn, grow and develop.</p>
+                    </div>
+                  <% end %>
+                  <%= link_to pages_giftman_path, class: "media d-flex align-items-center" do %>
+                    <div class="icon icon-shape icon-shape-info rounded-circle mb-4">
+                      <i class="fa fa-gift" aria-hidden="true"></i>
+                    </div>
+                    <div class="media-body ml-3">
+                      <h6 class="heading text-info mb-md-1">Surprise Gifts</h6>
+                      <p class="description d-none d-md-inline-block mb-0">Sponteneous gifts from Perkbox to brighten your day.</p>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <%= link_to pages_feedman_path, class: "nav-link" do %>
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text">Company Feed</span>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to pages_team_path, class: "nav-link" do %>
+                <i class="ni ni-collection d-lg-none"></i>
+                <span class="nav-link-inner--text">Manage Your Team</span>
+              <% end %>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+            <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="#">
+                    <i class="fa fa-search"></i>
+                    <span class="nav-link-inner--text d-lg-none">Profile</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <%= link_to pages_creditteam_path, class: "nav-link nav-link-icon" do %>
+                    <i class="fa fa-diamond" aria-hidden="true"></i> 100 Team Credits
+                    <span class="nav-link-inner--text d-lg-none">Profile</span>
+                <% end %>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <%= image_tag "Paul.jpg" %>
+                  </span>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+                <div class=" dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <%= link_to pages_creditman_path, class: "dropdown-item" do %>
+                    <i class="fa fa-diamond" aria-hidden="true"></i>
+                    <span>My credit <span class="badge badge-pill badge-success">2 New</span></span>
+                <% end %>
+                <a href="#" class="dropdown-item">
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+                  <span>My profile</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                  <span>My perks</span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <i class="fa fa-life-ring" aria-hidden="true"></i>
+                  <span>Help & support</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <%= link_to root_path, class: "dropdown-item" do %>
+                    <i class="fa fa-power-off" aria-hidden="true"></i>
+                    <span>Logout</span>
+                <% end %>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-link-icon" href="#">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="nav-link-inner--text d-lg-none">Profile</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="#">
+                    
+                      <i class="fa fa-bell" aria-hidden="true"></i>
+                   
+                </a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+

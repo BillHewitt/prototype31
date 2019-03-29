@@ -1,0 +1,183 @@
+  <main>
+    <div class="position-relative">
+      <!-- shape Hero -->
+      <section class="section section-lg section-shaped pb-250">
+        <div class="shape shape-style-1 bg-gradient-default">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="container py-lg-md d-flex">
+          <div class="col px-0">
+            <div class="row text-center justify-content-center">
+              <div class="col-lg-6">
+                <h1 class="display-3  text-white">Welcome to Perkbox, Paul
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew">
+          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </section>
+      <!-- 1st Hero Variation -->
+    </div>
+    <section class="section section-lg pt-lg-0 mt--200">
+      <div class="container">
+        <div class="row justify-content-center row text-center justify-content-center">
+          <div class="col-lg-12">
+            <div class="row row-grid">
+              <div class="col-lg-4">
+                <div class="card shadow border-0">
+                  <div class="card-body py-5">
+                    <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                      <i class="fa fa-diamond" aria-hidden="true"></i>
+                    </div>
+                    <h6 class="text-success text-uppercase">Credit Available</h6>
+                    <h1 class="display-2">10 </h1>
+                     <%= link_to pages_creditman_path do %>
+                        <button type="button" class="btn btn-secondary mt-4">Learn More</button>
+                      <% end %>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow border-0">
+                  <div class="card-body py-5">
+                    <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <h6 class="text-primary text-uppercase">Team & Company Perks</h6>
+                    <p class="text-muted">Use your credit to redeem the perks you value most.
+                    </p>
+                    <div>
+                      
+                    </div>
+                    <%= link_to pages_companyperksman_path do %>
+                      <button type="button" class="btn btn-primary mt-4">Browse Perks</button>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow border-0">
+                  <div class="card-body py-5">
+                    <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                      <i class="fa fa-trophy" aria-hidden="true"></i>
+                    </div>
+                    <h6 class="text-warning text-uppercase">Performance-Based Perks</h6>
+                    <p class="text-muted">Unlock individual and team perks with outstanding performance.
+                    </p>
+                    <%= link_to pages_performanceperksman_path do %>
+                      <button type="button" class="btn btn-secondary mt-4">Learn More</button>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg pt-0">
+      <div class="container">
+        <div class="card bg-gradient-danger shadow-lg border-0">
+          <div class="p-5">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h2 class="text-white">Access Hundreds Of Financial Discounts</h2>
+                <p class="lead text-white mt-3">100s of discounts at local restaurants, retailers and online shops. Link your card to earn back credit while you spend locally.</p>
+                <br>
+                <div class="row">
+                    <div class="col-md-1
+                    ">
+                      <%= image_tag "billswhite.png",:class => "img-fluid" %>
+                    </div>
+                    <div class="col-md-1">
+                      <%= image_tag "hmwhite.png",:class => "img-fluid" %>
+                    </div>
+                    <div class="col-md-2">
+                      <%= image_tag "paperchase.png",:class => "img-fluid" %>
+                    </div>
+                    <div class="col-md-2">
+                      <%= image_tag "hb.png",:class => "img-fluid" %>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 ml-lg-auto">
+                <%= link_to pages_financialman_path do %>
+                  <button type="button" class="btn btn-lg btn-block btn-white">Explore</button>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg pt-0">
+      <div class="container">
+        <div class="card bg-gradient-default shadow-lg border-0">
+          <div class="p-5">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h2 class="text-white">Visit Our Marketplace</h2>
+                <p class="lead text-white mt-3">Spend your credit on carefully curated, online subscriptions to help you learn, grow and develop... both in and out of work.</p>
+                <br>
+                                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                      <%= image_tag "duowhite.png",:class => "img-fluid" %>
+                    </div>
+                    <div class="col-md-2">
+                      <%= image_tag "spotifywhite.png",:class => "img-fluid" %>
+                    </div>
+                    <div class="col-md-2">
+                      <%= image_tag "audiblewhite.jpg",:class => "img-fluid" %>
+                    </div>
+                     <div class="col-md-2">
+                      <%= image_tag "coursera-logo-white.png",:class => "img-fluid" %>
+                    </div>
+                    <br>
+                  </div>
+
+              </div>
+
+              <div class="col-lg-3 ml-lg-auto">
+                <%= link_to pages_marketman_path do %>
+                  <button type="button" class="btn btn-lg btn-block btn-white">Explore</button>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg pt-0">
+      <div class="container">
+        <div class="card bg-gradient-info shadow-lg border-0">
+          <div class="p-5">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h2 class="text-white">Surprise Gifts From Perkbox</h2>
+                <p class="lead text-white mt-3">We like to keep you on your toes and bring a smile to your face. Sponteneous gifts to brighten your day.</p>
+                <br>
+              </div>
+              <div class="col-lg-3 ml-lg-auto">
+                <%= link_to pages_giftman_path do %>
+                  <button type="button" class="btn btn-lg btn-block btn-white">Explore</button>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
