@@ -117,4 +117,16 @@ class PagesController < ApplicationController
   def physical
   end
 
+  def financial2
+  end
+
+  def market2
+  end
+
+  def feed2
+  end
+
+  def welcome7
+  end
+
 end

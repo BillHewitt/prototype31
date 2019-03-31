@@ -37,6 +37,10 @@ Rails.application.routes.draw do
   get 'pages/motivators2'
   get 'pages/configure2'
   get 'pages/physical'
+  get 'pages/financial2'
+  get 'pages/market2'
+  get 'pages/feed2'
+  get 'pages/welcome7'
   root 'pages#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -101,6 +101,14 @@
 @import "custom/vendor/headroom.scss";
 @import "custom/vendor/nouislider.scss";
 
+.bg-default {
+  background-color: #172b4d !important;
+}
+
+.body {
+  background-color: #f9f9f9;
+}
+
 
 .btn.btn-secondary.btn-sm.space {
   margin-bottom: 10px;
@@ -115,7 +123,6 @@
 .section-lg {
 	padding-top: 7rem;
 }
-
 
 
 .custom-checkbox .custom-control-input ~ .custom-control-label {
@@ -202,3 +209,31 @@
 .badge.badge-pill.badge-success.text-uppercase.small {
 	font-size: 12px;
 }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  margin-left: -15px;
+  list-style: none;
+  background-color: #f9f9f9;
+  border-radius: 0.25rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525f7f;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.bg-default {
+  background-color: #747474 !important;
+}
+
+

@@ -6,7 +6,14 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-8">
-                <h3 class=""><span class="text-primary">Company Perks</span> > Financial Discounts</h3>
+                <nav aria-label="breadcrumb bg-white">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="<%= pages_companyperks_path %>">Company Perks</a>
+                      <li class="breadcrumb-item active" aria-current="page">Discounts Library</li>
+                    </ol>
+                  </nav>
+                <h3 class=""><span class="">Discounts Library</h3>
                 <p class="lead">
                   Redeem hundreds of discounts at local restaurants, retailers and high street brands. Link your card and earn back credit while you spend. <a href="#" class="btn btn-link text-primary">Learn more <i class="fa fa-angle-right"></i></a>
                 </p>
@@ -28,7 +35,7 @@
     <div class="section section-sm pt-lg-0 mt--200">
            <div class="container">
                <div class="row filters">
-                  <div class="col-lg-7">
+                  <div class="col-lg-4">
                     <p>
                       <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
                         Type
@@ -36,9 +43,7 @@
                       <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample1">
                         Category
                       </a>
-                      <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                        Sort By
-                      </a>
+                      
                     </p>
                     <div class="collapse" id="collapseExample1">
                       <div class="card shadow border-0">
@@ -53,60 +58,13 @@
                             <label class="custom-control-label" for="customCheck2">In-Store Discount Codes (20)</label>
                             <p class="small text-muted">Redeem physical discount codes for use in-store</p>
                           </div>
-                
-                          <div class="custom-control custom-checkbox mb-3">
-                            <input class="custom-control-input" id="customCheck5" type="checkbox">
-                            <label class="custom-control-label" for="customCheck5">Deals Near Me (15)</label>
-                             <p class="small text-muted">Tired of discount codes? Link your card and earn credit while you spend locally. <a href="#" class="active">Find out more <i class="fa fa-angle-right"></i></a></p>
-                          </div>
                           <br>
                           <a href="#" class="float-left btn btn-link text-default">Clear</a>
                           <a href="#" class="btn btn-link text-primary float-right">Apply</a>
                         </div>
                       </div>
                     </div>
-                    <div class="collapse" id="collapseExample3">
-                      <div class="card shadow border-0">
-                        <div class="card-body py-5">
-                          <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1" type="radio">
-                            <label class="custom-control-label" for="customRadio1">
-                              <span>Most Popular</span>
-                            </label>
-                          </div>
-                          <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio2" type="radio">
-                            <label class="custom-control-label" for="customRadio2">
-                              <span>Largest Discount</span>
-                            </label>
-                          </div>
-                          <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio3" type="radio">
-                            <label class="custom-control-label" for="customRadio3">
-                              <span>Recently Added</span>
-                            </label>
-                          </div>
-                          <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio5" type="radio">
-                            <label class="custom-control-label" for="customRadio5">
-                              <span>Alphabetical</span>
-                            </label>
-                          </div>
-                          <div class="custom-control custom-radio mb-3">
-                            <input name="custom-radio-1" class="custom-control-input" id="customRadio4" type="radio">
-                            <label class="custom-control-label" for="customRadio4">
-                              <span>Location</span>
-                              <div class="form-group">
-                                <input type="name" class="bill form-control form-control-alternative" id="exampleFormControlInput1" placeholder="enter your postcode">
-                              </div>
-                            </label>
-                          </div>
-                          <br>
-                          <a href="#" class="float-left btn btn-link text-default">Clear</a>
-                          <a href="#" class="btn btn-link text-primary float-right">Apply</a>
-                        </div>
-                      </div>
-                    </div>
+                    
                     <div class="collapse" id="collapseExample2">
                       <div class="card shadow border-0">
                         <div class="card-body py-5">
@@ -186,9 +144,55 @@
               </div>
 <hr>
 <div class="row">
-  <div class="col-lg-12">
-    <h4>Recommended for you <a href="#" class="btn btn-link text-primary float-right">See all <i class="fa fa-angle-right"></i></a></h4>
-    <br>
+  <div class="col-lg-6">
+    <h4>Recommended for you</h4>
+  </div>
+  <div class="col-lg-6">
+    <a class="btn btn-link text-primary float-right" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        Sort By<i class="fa fa-angle-down"></i>
+    </a>
+    <div class="collapse" id="collapseExample3">
+                      <div class="card shadow border-0">
+                        <div class="card-body py-5">
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio1" type="radio">
+                            <label class="custom-control-label" for="customRadio1">
+                              <span>Most Popular</span>
+                            </label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio2" type="radio">
+                            <label class="custom-control-label" for="customRadio2">
+                              <span>Largest Discount</span>
+                            </label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio3" type="radio">
+                            <label class="custom-control-label" for="customRadio3">
+                              <span>Recently Added</span>
+                            </label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio5" type="radio">
+                            <label class="custom-control-label" for="customRadio5">
+                              <span>Alphabetical</span>
+                            </label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="custom-radio-1" class="custom-control-input" id="customRadio4" type="radio">
+                            <label class="custom-control-label" for="customRadio4">
+                              <span>Location</span>
+                              <div class="form-group">
+                                <input type="name" class="bill form-control form-control-alternative" id="exampleFormControlInput1" placeholder="enter your postcode">
+                              </div>
+                            </label>
+                          </div>
+                          <br>
+                          <a href="#" class="float-left btn btn-link text-default">Clear</a>
+                          <a href="#" class="btn btn-link text-primary float-right">Apply</a>
+                        </div>
+                      </div>
+                    </div>
   </div>
 </div>
 
