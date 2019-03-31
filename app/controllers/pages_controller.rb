@@ -129,4 +129,10 @@ class PagesController < ApplicationController
   def welcome7
   end
 
+  def trophies2
+  end
+
+  def feedback
+  end
+
 end
