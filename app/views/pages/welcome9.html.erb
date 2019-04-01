@@ -219,18 +219,22 @@
                   <form>
                     <div class="form-group">
                       <label for="validationCustomUsername">Who would you like to nominate?</label>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
-                          </div>
-                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Start typing their name" aria-describedby="inputGroupPrepend" required="">
-                        </div>
+                        <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Start typing the name..." type="password">
+                  </div>
+                </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleFormControlTextarea1">What would you like to nominate them for?</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <form>
+  <textarea class="form-control form-control-alternative" rows="3" placeholder="Let us know what for..."></textarea>
+</form>
                     </div>
-                    <div class="form-group focused">
+                    <div class="form-group">
                       <label for="exampleFormControlSelect1">Which company value did they embody?</label>
                       <select class="form-control" id="exampleFormControlSelect1">
                         <option>Zero Fear</option>
