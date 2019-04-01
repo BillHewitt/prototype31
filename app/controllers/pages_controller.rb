@@ -153,4 +153,10 @@ class PagesController < ApplicationController
   def market3
   end
 
+  def welcome9
+  end
+
+  def comopanyperks3
+  end
+
 end

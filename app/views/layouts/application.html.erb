@@ -41,6 +41,10 @@
         <%= render 'layouts/header3' %>
     <% end %>
 
+    <% if current_page?(pages_welcome9_path) or current_page?(pages_companyperks3_path) or current_page?(pages_market4_path) -%>
+        <%= render 'layouts/header4' %>
+    <% end %>
+
     <%= yield %>
 
     <% if current_page?(root_path) or current_page?(pages_login_path) or current_page?(pages_configure_path) or current_page?(pages_motivators_path) -%>

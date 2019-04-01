@@ -50,6 +50,9 @@ Rails.application.routes.draw do
   get 'pages/financial3'
   get 'pages/market3'
   get 'pages/feed3'
+  get 'pages/welcome9'
+  get 'pages/companyperks3'
+  get 'pages/market4'
   root 'pages#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
