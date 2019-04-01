@@ -7,8 +7,8 @@
         <div class="container py-lg-md d-flex">
           <div class="col px-0">
             <div class="row">
-              <div class="col-lg-6">
-                <h1 class="display-3  text-white">The first perks platform to change the way your team works forever
+              <div class="col-lg-9">
+                <h1 class="display-3 text-white">The first perks platform to change the way your team works forever
                 </h1>
                 <br>
                 <div class="bg text-white">
@@ -18,23 +18,54 @@
                     <li>Create a culture you’re proud of</li>
                   </ul>
                 </div>
-                <div class="btn-wrapper mt-5">
-                  <%= link_to pages_login_path do %>
-                    <button type="button" class="btn btn-lg btn-secondary btn-icon mb-3 mb-sm-0">Employee Flow 1</button>
-                  <% end %>
-
-                  <%= link_to pages_welcome9_path do %>
+                <br>
+                <table class="table table-bordered text-white small">
+                  <thead>
+                    <tr>
+                      <th scope="col">Prototype</th>
+                      <th scope="col">Scenario</th>
+                      <th scope="col">Branding</th>
+                      <th scope="col">Notes</th>
+                      <th scope="col">Link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>First time Spotify employee + personalised homepage + onboarding</td>
+                      <td>Heavy company branding (Spotify)</td>
+                      <td>Top navigation is all clickable, as well as in-page (right column Homepage + Company Hub). Clicking logo takes you to "returning user" flow</td>
+                      <td><%= link_to pages_login_path do %>
+                          <button type="button" class="btn btn-lg btn-secondary btn-icon mb-3 mb-sm-0">Employee Flow 1</button>
+                        <% end %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>First time Spotify employee + company hub as homepage (no onboarding)</td>
+                      <td>Heavy company branding (Spotify)</td>
+                      <td>Only the main nav items are clickable (nothing in the "my profile" sections)</td>
+                      <td><%= link_to pages_welcome9_path do %>
                     <button type="button" class="btn btn-lg btn-secondary btn-icon mb-3 mb-sm-0">Employee Flow 2</button>
                   <% end %>
-                  <br>
-                  <br>
-                  <%= link_to pages_welcomeman_path do %>
-                    <button type="button" class="btn btn-lg btn-secondary btn-icon mb-3 mb-sm-0" disabled = "disabled">Team Manager Flow</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>First time Spotify employee + personalised homepage (no onboarding)</td>
+                      <td>Light company branding (Obviously a Perkbox product)</td>
+                      <td>Top navigation is all clickable, as well as in-page (right column Homepage + Company Hub). Clicking logo takes you to "returning user" flow</td>
+                      <td><%= link_to pages_welcome10_path do %>
+                    <button type="button" class="btn btn-lg btn-secondary btn-icon mb-3 mb-sm-0">Employee Flow 3</button>
                   <% end %>
-                </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                
                 <br>
                 <br>
-                <p class="text-white small">*Admin and Finance roles not included yet.</p>
               </div>
             </div>
           </div>

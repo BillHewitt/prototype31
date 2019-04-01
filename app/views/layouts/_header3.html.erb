@@ -1,7 +1,7 @@
 <header class="header-global">
     <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-default fixed-top">
       <div class="container-fluid">
-        <%= link_to image_tag("spotify.png"), pages_welcome8_path, :class=>'navbar-brand mr-lg-5' %>
+        <%= link_to image_tag("perkbox.png"), pages_welcome11_path, :class=>'navbar-brand bill mr-lg-5' %>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,14 +22,14 @@
             </div>
           </div>
           <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-            <%= link_to pages_companyperks2_path, class: "nav-link" do %>
-                Company Perks
+            <%= link_to pages_companyperks4_path, class: "nav-link" do %>
+                Perks
             <% end %>
-            <%= link_to pages_financial3_path, class: "nav-link" do %>
-                Discounts Library
-            <% end %>
-            <%= link_to pages_market3_path, class: "nav-link" do %>
+            <%= link_to pages_market5_path, class: "nav-link" do %>
                 Marketplace
+            <% end %>
+            <%= link_to pages_feed4_path, class: "nav-link" do %>
+                Company Hub
             <% end %>
           </ul>
           <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
@@ -40,9 +40,10 @@
                 </a>
             </li>
             <li class="nav-item">  
-                 <div class="nav-link nav-link-icon">
-                <i class="fa fa-diamond" aria-hidden="true"></i> 100 Credits
-              </div> 
+                <%= link_to pages_credit2_path, class: "nav-link nav-link-icon" do %>
+                  <i class="fa fa-diamond" aria-hidden="true"></i>
+                  <span>100 Credits</span>
+                <% end %>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -54,33 +55,31 @@
               </a>
               <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
                 <div class=" dropdown-header noti-title">
-                  <h6 class="text-overflow m-0">Hey, Bill!</h6>
+                  <h6 class="text-overflow m-0">Hey, Joe!</h6>
                 </div>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-user-circle"></i>
-                    My Profile
+                <%= link_to pages_profile2_path, class: "dropdown-item" do %>
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+                  <span>My profile</span>
+                <% end %>
+                <%= link_to pages_trophies3_path, class: "dropdown-item" do %>
+                  <i class="fa fa-trophy" aria-hidden="true"></i><span> My Awards</span>
+                <% end %>
+                <%= link_to pages_trophies4_path, class: "dropdown-item" do %>
+                  <i class="fa fa-certificate" aria-hidden="true"></i><span> My Badges</span>
+                <% end %>
+                <%= link_to pages_history2_path, class: "dropdown-item" do %>
+                  <i class="fa fa-history" aria-hidden="true"></i>
+                  <span>Redeemed Codes</span>
+                <% end %>
+                <a href="#" class="dropdown-item">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  <span>Help & support</span>
                 </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-trophy"></i>
-                    My Awards
-                </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-certificate"></i>
-                    My Badges
-                </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-history"></i>
-                    Redeemed Codes
-                </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-question-circle"></i>
-                    Help & Support
-                </a>
+                <div class="dropdown-divider"></div>
                 <%= link_to root_path, class: "dropdown-item" do %>
                     <i class="fa fa-power-off" aria-hidden="true"></i>
                     <span>Logout</span>
                 <% end %>
-
               </div>
             </li>
           </ul>

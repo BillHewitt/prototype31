@@ -135,10 +135,31 @@ class PagesController < ApplicationController
   def feedback
   end
 
+  def feedback2
+  end
+
   def recognise
   end
 
+  def recognise2
+  end
+
   def values
+  end
+
+  def values2
+  end
+
+  def credit2
+  end
+
+  def trophies3
+  end
+
+  def profile2
+  end
+
+  def history2
   end
 
   def welcome8
@@ -157,6 +178,24 @@ class PagesController < ApplicationController
   end
 
   def comopanyperks3
+  end
+
+  def comopanyperks10
+  end
+
+  def market5
+  end
+
+  def feed4
+  end
+
+  def welcome11
+  end
+
+  def financial4
+  end
+
+  def trophies4
   end
 
 end
