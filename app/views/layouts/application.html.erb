@@ -37,6 +37,10 @@
         <%= render 'layouts/header' %>
     <% end %>
 
+    <% if current_page?(pages_welcome8_path) or current_page?(pages_companyperks2_path) or current_page?(pages_financial3_path) or current_page?(pages_market3_path) or current_page?(pages_feed3_path) -%>
+        <%= render 'layouts/header3' %>
+    <% end %>
+
     <%= yield %>
 
     <% if current_page?(root_path) or current_page?(pages_login_path) or current_page?(pages_configure_path) or current_page?(pages_motivators_path) -%>

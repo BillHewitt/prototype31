@@ -141,4 +141,16 @@ class PagesController < ApplicationController
   def values
   end
 
+  def welcome8
+  end
+
+  def companyperks2
+  end
+
+  def financial3
+  end
+
+  def market3
+  end
+
 end

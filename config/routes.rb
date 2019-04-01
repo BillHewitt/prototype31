@@ -45,6 +45,11 @@ Rails.application.routes.draw do
   get 'pages/feedback'
   get 'pages/recognise'
   get 'pages/values'
+  get 'pages/welcome8'
+  get 'pages/companyperks2'
+  get 'pages/financial3'
+  get 'pages/market3'
+  get 'pages/feed3'
   root 'pages#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
