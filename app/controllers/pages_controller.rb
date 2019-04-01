@@ -135,4 +135,10 @@ class PagesController < ApplicationController
   def feedback
   end
 
+  def recognise
+  end
+
+  def values
+  end
+
 end

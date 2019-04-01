@@ -43,6 +43,8 @@ Rails.application.routes.draw do
   get 'pages/welcome7'
   get 'pages/trophies2'
   get 'pages/feedback'
+  get 'pages/recognise'
+  get 'pages/values'
   root 'pages#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
