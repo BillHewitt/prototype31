@@ -198,4 +198,16 @@ class PagesController < ApplicationController
   def trophies4
   end
 
+  def login3
+  end
+
+  def motivators3
+  end
+
+  def welcome12
+  end
+
+  def configure3
+  end
+
 end

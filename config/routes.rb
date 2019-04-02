@@ -67,6 +67,10 @@ Rails.application.routes.draw do
   get 'pages/profile2'
   get 'pages/trophies3'
   get 'pages/trophies4'
+  get 'pages/login3'
+  get 'pages/configure3'
+  get 'pages/motivators3'
+  get 'pages/welcome12'
   root 'pages#main'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

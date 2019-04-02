@@ -23,7 +23,7 @@
 
   <body>
 
-    <% if current_page?(pages_welcome_path) or current_page?(pages_login_path) or current_page?(pages_configure_path) or current_page?(pages_motivators_path) -%>
+    <% if current_page?(pages_welcome_path) or current_page?(pages_login_path) or current_page?(pages_configure_path) or current_page?(pages_motivators_path) or current_page?(pages_motivators3_path) or current_page?(pages_login3_path) or current_page?(pages_configure3_path) or current_page?(pages_welcome12_path) -%>
         <%= render 'layouts/header1' %>
 
     <% end %>
@@ -47,7 +47,7 @@
 
     <%= yield %>
 
-    <% if current_page?(root_path) or current_page?(pages_login_path) or current_page?(pages_configure_path) or current_page?(pages_motivators_path) or current_page?(pages_welcome_path) -%>
+    <% if current_page?(root_path) or current_page?(pages_login_path) or current_page?(pages_login3_path) or current_page?(pages_configure_path) or current_page?(pages_configure3_path) or current_page?(pages_motivators_path) or current_page?(pages_motivators3_path) or current_page?(pages_welcome_path) or current_page?(pages_welcome12_path) -%>
 
     <% else %>
 

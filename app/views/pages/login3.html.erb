@@ -1,0 +1,67 @@
+<main>
+    <section class="section section-lg section-hero section-shaped">
+        <div class="shape shape-style-1 bg-gradient-primary">
+        </div>
+      </div>
+      <div class="container pt-lg-md">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="card bg-secondary shadow border-0">
+              <div class="card-header bg-white pb-6">
+               <div class="text-center">
+                <small class="text-muted">Step 1 of 3</small>
+              </div>
+              <br>
+              <h3 class="text-center">Welcome, Joe!</h3>
+              <p class="text-center">You've been invited to Perkbox by Your Manager. Go ahead and setup your email and password to get started.</p>
+              </div>
+              <div class="card-body px-lg-6 py-lg-6">
+                <form role="form">
+                <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" value="joe.blogs@spotify.com">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Password" type="password">
+                  </div>
+                </div>
+                 <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Confirm your password" type="password">
+                  </div>
+                </div>
+                <div class="text-muted font-italic"><small>password strength: <span class="text-primary font-weight-700">strong</span></small></div>
+                <div class="row my-4">
+                  <div class="col-12">
+                    <div class="custom-control custom-control-alternative custom-checkbox">
+                      <input class="custom-control-input" id="customCheckRegister" type="checkbox">
+                      <label class="custom-control-label" for="customCheckRegister">
+                        <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <%= link_to pages_configure3_path do %>
+                    <button type="button" class="btn btn-primary mt-4">Create Account</button>
+                  <% end %>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
