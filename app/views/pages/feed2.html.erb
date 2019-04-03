@@ -10,9 +10,9 @@
               <br>
               <br>
               <br>
-                <h3 class="">Company Hub</h3>
+                <h3 class="">Team Hub</h3>
                 <p class="lead">
-                  Keep up to date with your company news, celebrate successes and help create a great culture you're proud to be part of.
+                  Team culture matters. Celebrate successes, have your say and help make Product & Engineering great!
                 </p>
               </div>
             </div>
@@ -94,8 +94,8 @@
                   <div class="btn-group float-right">
                     <button type="button" class="btn btn-link text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By <i class="fa fa-angle-down"></i></button>
                     <div class="dropdown-menu dropdown-menu-right">
-                      <a class="dropdown-item" href="#">My Teams</a>
-                      <a class="dropdown-item" href="#">My Company</a>
+                      <a class="dropdown-item" href="#">Just Me</a>
+                      <a class="dropdown-item" href="#">The Whole Team</a>
                     </div>
                   </div><!-- /btn-group -->
                 </div>
@@ -104,7 +104,7 @@
         <hr>
         <div class="row">
                   <div class="col-lg-12">
-                    <h4>Company Feed</h4>
+                    <h4>Team Feed</h4>
                      
                     <br>
                   </div>
@@ -121,7 +121,7 @@
             <div class="col-md-10">
               <i class="fa fa-thumb-tack mr-3 float-right" aria-hidden="true"></i>
               <h4>Announcement</h4>
-              <p class="text-muted small">Announcement Title from Manager Name · Just Now</p>
+              <p class="text-muted small">Announcement Title from Paul Schulz · Just Now</p>
               <p class="lead">
                 Check the video out, thanks to all that spoke!.
               </p>
@@ -154,9 +154,9 @@
             <div class="col-md-10">
               <i class="fa fa-thumb-tack mr-3 float-right" aria-hidden="true"></i>
               <h4>Poll</h4>
-              <p class="text-muted small">Poll Title from Manager Name · 2 days ago</p>
+              <p class="text-muted small">Poll Title from Dan Taylor · 2 days ago</p>
               <p class="lead">
-                Hey, what shall we call our next event?
+                Hey, what do you think we should call our next event?
               </p>
                 <div class="custom-control custom-checkbox mb-3">
                   <input class="custom-control-input" id="customCheck1" type="checkbox">
@@ -208,7 +208,7 @@
             <div class="col-md-10">
               <i class="fa fa-share-alt mr-3 float-right" aria-hidden="true"></i>
               <h4>Announcement</h4>
-              <p class="text-muted small">Announcement Title from Manager Name · 2 days ago</p>
+              <p class="text-muted small">Announcement Title from Paul Schulz · 2 days ago</p>
               <p class="lead">
                 Thanks for filling out the surveys last week. Clearly Slack isn't working for us right now. Ricky is going to be running some workshops this week to understand more.
               </p>
@@ -236,9 +236,9 @@
             </div>
             <div class="col-md-10">
               <h4>Recognition</h4>
-              <p class="text-muted small">Company Value from Manager Name · 2 days ago</p>
+              <p class="text-muted small">Team Value from Paul Schulz · 2 days ago</p>
               <p class="lead">
-                Wanted to give a special thanks to @Hastings. He really went above and beyond what I expected in the latest work stream. Give him a hand one and all!
+                Big big congrats on a couple fronts today. Firstly, thanks all around to the team responsible for getting the HiBoB API integration across the line. It's all ready to go into production their side.  Dates to be confirmed but all happy and integrated well now - looking at next week probably but tbc.
               </p>
             </div>
           </div>
@@ -261,8 +261,8 @@
       <div class="">
         <div class="card-body py-3">
           <h6 class="text-default text-uppercase">Have your say</h6>
-          <p class="description mt-3">Help shape your company with anonymous feedback so we know how to improve.</p>
-          <a href="/pages/feedback">
+          <p class="description mt-3">Help shape product and engineering. Send anonymous feedback to Paul Schulz, so we know where we can improve.</p>
+          <a href="">
                   <button type="button" class="btn btn-primary mt-4">Send anonymous feedback</button>
                 </a>
         </div>
@@ -275,7 +275,21 @@
         <div class="card-body py-3">
           <h6 class="text-default text-uppercase">Recognise someone</h6>
           <p class="description mt-3">Time to make a colleague's day! Who has helped you out or done something amazing recently?</p>
-          <a href="/pages/recognise">
+          <div>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+          </div>
+          <a href="">
                   <button type="button" class="btn btn-primary mt-4">Recognise Somebody</button>
                 </a>
         </div>
@@ -283,8 +297,8 @@
       <hr>
 
       <div class="card-body py-3">
-          <h6 class="text-default text-uppercase">Company Awards</h6>
-          <p class="description mt-3">Every quarter we celebrate somebody who has exemplified our company values. <span class="small">30 days left this quarter</span></p>
+          <h6 class="text-default text-uppercase">Product & Engineering Awards</h6>
+          <p class="description mt-3">Every quarter we celebrate somebody who has exemplified our team values. <span class="small">30 days left this quarter</span></p>
           <div>
             <span class="avatar avatar-lg rounded-circle">
                 <%= image_tag "avatar.png" %>
@@ -308,12 +322,12 @@
 
       <div class="">
         <div class="card-body py-3">
-          <h6 class="text-default text-uppercase">Company Values</h6>
-          <p class="description mt-3">Company mission statement</p>
+          <h6 class="text-default text-uppercase">Product & Engineering Values</h6>
+          <p class="description mt-3">Value statement</p>
           <div>
-            <span class="badge badge-pill badge-primary">Company Value</span>
-            <span class="badge badge-pill badge-primary">Company Value</span>
-            <span class="badge badge-pill badge-primary">Company Value</span>
+            <span class="badge badge-pill badge-primary">Value 1</span>
+            <span class="badge badge-pill badge-primary">Value 1</span>
+            <span class="badge badge-pill badge-primary">Value 1</span>
             <p>...</p>
           </div>
           <a href="/pages/values">
