@@ -210,4 +210,7 @@ class PagesController < ApplicationController
   def configure3
   end
 
+  def trophies5
+  end
+
 end
