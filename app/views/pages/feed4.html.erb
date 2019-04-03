@@ -12,7 +12,7 @@
               <br>
                 <h3 class="">Company Hub</h3>
                 <p class="lead">
-                  Keep up to date with Spotify news, celebrate successes and help create a culture you're all proud to be part of.
+                  Keep up to date with Spotify news, celebrate successes and help create a great culture we're all proud to be part of.
                 </p>
               </div>
             </div>
@@ -94,7 +94,6 @@
                   <div class="btn-group float-right">
                     <button type="button" class="btn btn-link text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter By <i class="fa fa-angle-down"></i></button>
                     <div class="dropdown-menu dropdown-menu-right">
-                      <a class="dropdown-item" href="#">Me</a>
                       <a class="dropdown-item" href="#">My Teams</a>
                       <a class="dropdown-item" href="#">My Company</a>
                     </div>
@@ -141,63 +140,8 @@
           </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
         </div>
       </div>
-      <br>
+  
 
-      <div class="card shadow border-0">
-        <div class="card-body py-5">
-          <div class="row">
-            <div class="col-md-2">
-              <span class="avatar rounded-circle">
-                    <%= image_tag "avatar.png" %>
-                  </span>
-            </div>
-            <div class="col-md-10">
-              <i class="fa fa-thumb-tack mr-3 float-right" aria-hidden="true"></i>
-              <h4>Poll</h4>
-              <p class="text-muted small">Poll Title from Manager Name · 2 days ago</p>
-              <p class="lead">
-                Hey, it company awards time. Please vote on who you think should win the award this year!
-              </p>
-                <div class="form-group">
-                  <form>
-                    <div class="form-group">
-                      <label for="validationCustomUsername">Who would you like to nominate?</label>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
-                          </div>
-                          <input type="text" class="form-control" id="validationCustomUsername" placeholder="Start typing their name" aria-describedby="inputGroupPrepend" required="">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">What would you like to nominate them for?</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="form-group focused">
-                      <label for="exampleFormControlSelect1">Which company value did they embody?</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Zero Fear</option>
-                        <option>Above &amp; Beyond</option>
-                        <option>Not A Job A Family</option>
-                        <option>...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                  </form>
-                </div>
-                <a href="#" class="btn btn-primary mt-4">Send response</a>
-            </div>
-          </div>
-        </div>
-        <div class="card-footer">
-          <span class="float-right">
-            <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add comment"><i class="fa fa-comments mr-3"></i>
-
-             </a><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"><i class="fa fa-smile-o mr-3"></i>
-          </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
-
-          </div>
-        </div>
       </div>
 
       <div class="card shadow border-0">
@@ -318,8 +262,8 @@
       <div class="">
         <div class="card-body py-3">
           <h6 class="text-default text-uppercase">Have your say</h6>
-          <p class="description mt-3">Help shape your company with anonymous feedback.</p>
-          <a href="/pages/feedback2">
+          <p class="description mt-3">Help shape Spotify with anonymous feedback so we know how to improve.</p>
+          <a href="#">
                   <button type="button" class="btn btn-primary mt-4">Send anonymous feedback</button>
                 </a>
         </div>
@@ -332,12 +276,34 @@
         <div class="card-body py-3">
           <h6 class="text-default text-uppercase">Recognise someone</h6>
           <p class="description mt-3">Time to make a colleague's day! Who has helped you out or done something amazing recently?</p>
-          <a href="/pages/recognise2">
+          <a href="#">
                   <button type="button" class="btn btn-primary mt-4">Recognise Somebody</button>
                 </a>
         </div>
       </div>
       <hr>
+
+      <div class="card-body py-3">
+          <h6 class="text-default text-uppercase">Company Awards</h6>
+          <p class="description mt-3">Every quarter we celebrate somebody who has exemplified our company values. <span class="small">30 days left this quarter</span></p>
+          <div>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+            <span class="avatar avatar-lg rounded-circle">
+                <%= image_tag "avatar.png" %>
+            </span>
+          </div>
+          <a href="#" class="btn btn-primary mt-4">Nominate somebody</a>
+        </div>
+
+        <hr>
 
   
 
@@ -351,7 +317,7 @@
             <span class="badge badge-pill badge-primary">Company Value</span>
             <p>...</p>
           </div>
-          <a href="/pages/values2">
+          <a href="#">
                   <button type="button" class="btn btn-primary mt-4">See values </button>
                 </a>
         </div>

@@ -213,4 +213,7 @@ class PagesController < ApplicationController
   def trophies5
   end
 
+  def market6
+  end
+
 end
