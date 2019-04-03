@@ -25,17 +25,12 @@
             <%= link_to pages_companyperks4_path, class: "nav-link" do %>
                 Company Perks
             <% end %>
-
-            <%= link_to pages_feed4_path, class: "nav-link" do %>
-                Company Hub
-            <% end %>
-
             <li class="nav-item dropdown">
               <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                 <i class="ni ni-ui-04 d-lg-none"></i>
                 <span class="nav-link-inner--text">Discover Perkbox</span>
               </a>
-    
+
               <div class="dropdown-menu dropdown-menu-xl">
                 <div class="dropdown-menu-inner">
                   <%= link_to pages_financial3_path, class: "media d-flex align-items-center" do %>
@@ -53,7 +48,7 @@
                     </div>
                     <div class="media-body ml-3">
                       <h6 class="heading text-default mb-md-1">Perkbox Store</h6>
-                      <p class="description d-none d-md-inline-block mb-0">Spend your credit on gift cards that matter to you - from your weekly shop to online courses...</p>
+                      <p class="description d-none d-md-inline-block mb-0">Spend your credit on extras that matter to you - from your weekly shop to online courses...</p>
                     </div>
                   <% end %>
                   <%= link_to pages_market6_path, class: "media d-flex align-items-center" do %>
@@ -68,7 +63,9 @@
                 </div>
               </div>
             </li>
-            
+            <%= link_to pages_feed4_path, class: "nav-link" do %>
+                Company Hub
+            <% end %>
           </ul>
           <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
             <li class="nav-item">
