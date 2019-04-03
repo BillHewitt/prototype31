@@ -34,17 +34,6 @@
               <% end %>
             <% end %>
 
-            <% if current_page?(pages_market2_path) -%>
-              <%= link_to pages_market2_path, class: "nav-link active" do %>
-                Marketplace
-              <% end %>
-            <% else %>
-    
-              <%= link_to pages_market2_path, class: "nav-link" do %>
-                Marketplace
-              <% end %>
-            <% end %>
-
             <% if current_page?(pages_feed2_path) -%>
               <%= link_to pages_feed2_path, class: "nav-link active" do %>
                 Company Hub
@@ -53,6 +42,17 @@
     
               <%= link_to pages_feed2_path, class: "nav-link" do %>
                 Company Hub
+              <% end %>
+            <% end %>
+
+            <% if current_page?(pages_market2_path) -%>
+              <%= link_to pages_market2_path, class: "nav-link active" do %>
+                Marketplace
+              <% end %>
+            <% else %>
+    
+              <%= link_to pages_market2_path, class: "nav-link" do %>
+                Marketplace
               <% end %>
             <% end %>
 
