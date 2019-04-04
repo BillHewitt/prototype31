@@ -24,14 +24,25 @@
           </div>
           <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
 
+            <% if current_page?(pages_feed2_path) -%>
+              <%= link_to pages_feed2_path, class: "nav-link active" do %>
+                Company Hub
+              <% end %>
+            <% else %>
+    
+              <%= link_to pages_feed2_path, class: "nav-link" do %>
+                Company Hub
+              <% end %>
+            <% end %>
+
             <% if current_page?(pages_companyperks_path) -%>
               <%= link_to pages_companyperks_path, class: "nav-link active" do %>
-                Your Perks
+                Company Perks
               <% end %>
             <% else %>
     
               <%= link_to pages_companyperks_path, class: "nav-link" do %>
-                Your Perks
+                Company Perks
               <% end %>
             <% end %>
 
@@ -39,24 +50,12 @@
 
             <% if current_page?(pages_market2_path) -%>
               <%= link_to pages_market2_path, class: "nav-link active" do %>
-                The Marketplace
+                The Perkbox Marketplace
               <% end %>
             <% else %>
     
               <%= link_to pages_market2_path, class: "nav-link" do %>
-                The Marketplace
-              <% end %>
-            <% end %>
-
-
-            <% if current_page?(pages_feed2_path) -%>
-              <%= link_to pages_feed2_path, class: "nav-link active" do %>
-                Team Hub
-              <% end %>
-            <% else %>
-    
-              <%= link_to pages_feed2_path, class: "nav-link" do %>
-                Team Hub
+                The Perkbox Marketplace
               <% end %>
             <% end %>
 
